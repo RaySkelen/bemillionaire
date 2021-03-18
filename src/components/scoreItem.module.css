@@ -1,0 +1,12 @@
+.itemText {
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 23,2px;
+}
+
+.board {
+    background-color: white;
+    height: 100%;
+    margin: 30% 0 10% 0;
+    width: 100%;
+}

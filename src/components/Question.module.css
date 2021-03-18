@@ -1,0 +1,30 @@
+.question {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 2vw;
+    line-height: 116%;
+}
+
+.container {
+    margin: 10% 0 20% 10%;
+    padding-right: 30%;
+}
+
+@media screen and (max-width: 910px) {
+    .question {
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 4vw;
+        line-height: 116%;
+    }
+    
+    .container {
+        margin: 5% 0 2% 2%;
+        margin-bottom: 2%;
+        display: flex;
+        padding-top: 5%;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+    }
+}
