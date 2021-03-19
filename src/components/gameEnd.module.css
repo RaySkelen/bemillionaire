@@ -7,7 +7,7 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 3vw;
     line-height: 116%;
     align-items: center;
     color: #1C1C21;
@@ -22,7 +22,7 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
-    font-size: 56px;
+    font-size: 2vw;
     line-height: 116%;
     align-items: center;
     color: #1C1C21;
@@ -54,7 +54,7 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 116%;
     display: inline-block;
     text-decoration: none;
@@ -81,6 +81,11 @@
         font-size: 5vw;
     }
     .sign {
-        font-size: 7vw;
+        font-size: 5vw;
+    }
+    .button {
+        line-height: 0;
+        width: 30vw;
+        height: 0;
     }
 }

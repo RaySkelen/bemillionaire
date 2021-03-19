@@ -2,7 +2,7 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2vw;
     line-height: 116%;
     align-items: center;
     color: #1C1C21;
@@ -15,6 +15,5 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('./fonts/Inter-Black.woff') format('woff'),
-    url('./fonts/Inter-Black.ttf') format('truetype');
+    src: url('./fonts/Inter-Black.woff') format('woff'), url('./fonts/Inter-Black.ttf') format('truetype');
 }

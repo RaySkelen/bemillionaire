@@ -23,3 +23,7 @@ code {
 #root > div > div {
   height: 100%;
 }
+
+button {
+  outline: none;
+}

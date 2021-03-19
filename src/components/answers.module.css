@@ -24,13 +24,11 @@
         width: 100%;
         margin-left: 0;
     }
-    
     .answer {
         display: inline-block;
         width: 100%;
         margin-bottom: 20px;
     }
-    
     .answer text {
         font-family: Inter;
         font-size: 70%;
