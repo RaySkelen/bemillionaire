@@ -10,11 +10,28 @@
     width: 50%;
 }
 
-.answer text {
+.answer:hover svg path{
+    stroke: #FF8B37;
+}
+
+.answer:active svg path{
+    stroke: #FF8B37;
+}
+
+.answer:active svg path{
+    fill: #FFF3EB;
+}
+
+.answerText {
     font-family: Inter;
     font-size: 70%;
     line-height: 116%;
     text-transform: capitalize;
+}
+
+.letter {
+    font-family: Inter;
+    font-size: 120%;
 }
 
 @media screen and (max-width: 910px) {

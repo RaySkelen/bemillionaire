@@ -40,13 +40,12 @@ body {
 }
 
 .button {
-    padding: 20px 24px 20px 24px;
     width: 35%;
     height: 25%;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.5vw;
     line-height: 116%;
     display: inline-block;
     text-decoration: none;

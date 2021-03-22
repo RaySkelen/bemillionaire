@@ -35,7 +35,7 @@ const Answers = (props) => {
     }
   }, [clickedId]);
   let answers = props.answers.map((a, i) => (
-    <Answer key={i} answer={a} id={i} getClickedId={handleClick} />
+    <Answer key={i} answer={a} id={i} getClickedId={handleClick} letter={props.letters[i]}/>
   ));
   return (
     <div className={styles.container}>
@@ -54,8 +54,7 @@ const Answer = (props) => {
         height="10%"
         viewBox="0 0 421 72"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className={styles.figure}>
+        xmlns="http://www.w3.org/2000/svg">
         <path d="M404 36L421 36" stroke="#D0D0D8" />
         <path d="M0 36L17 36" stroke="#D0D0D8" />
         <path
@@ -63,8 +62,11 @@ const Answer = (props) => {
           fill="white"
           stroke="#D0D0D8"
         />
-        <text x="10%" y="50%" fill="#1C1C21" dominantBaseline="middle">
+        <text x="15%" y="50%" fill="#1C1C21" dominantBaseline="middle" className={styles.answerText}>
           {props.answer}
+        </text>
+        <text x="10%" y="50%" fill="#FF8B37" className={styles.letter} dominantBaseline="middle">
+          {props.letter}
         </text>
       </svg>
     </div>
@@ -77,6 +79,7 @@ const mapStateToProps = (state) => ({
   answers: state.game.currentQuestion.content,
   level: state.game.currentLevel,
   questions: state.data.questions,
+  letters: state.config.letters
 });
 
 export default compose(

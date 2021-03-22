@@ -7,7 +7,7 @@ const Question = (props) => {
     <div className={styles.container}>
       {props.question === null && <Preloader />}
       {props.question !== undefined && props.question !== null && (
-        <span className={styles.question}>{props.question}</span>
+        <span className={styles.question}>{props.level}: {props.question}</span>
       )}
     </div>
   );

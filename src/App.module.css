@@ -6,3 +6,11 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
+button:hover {
+  background: #FFAC70;
+}
+
+button:active {
+  background: #E87928;
+}

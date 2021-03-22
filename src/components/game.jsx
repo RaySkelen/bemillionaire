@@ -64,7 +64,7 @@ const Game = (props) => {
           <div
             className={scoreHidden ? styles.questionContainer : styles.hidden}>
             <Menu className={styles.menu} onClick={() => showScore(false)} />
-            <Question question={props.currentQuestion.question} />
+            <Question question={props.currentQuestion.question} level={props.currentLevel}/>
             <Answers
               answers={props.currentQuestion.content}
               correctAnswer={props.currentQuestion.correct}
