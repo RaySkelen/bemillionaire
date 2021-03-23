@@ -1,5 +1,4 @@
 .sign {
-    font-family: Inter;
     font-style: normal;
     font-weight: 700;
     font-size: 2vw;
@@ -11,9 +10,4 @@
     order: 0;
     flex-grow: 0;
     margin: 8px 0px;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter-Black.woff') format('woff'), url('./fonts/Inter-Black.ttf') format('truetype');
 }

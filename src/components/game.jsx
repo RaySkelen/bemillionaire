@@ -37,7 +37,7 @@ const Game = (props) => {
       push.push("/gameEnd");
     }
   }, [finished]);
-  const isMobile = useMediaQuery({ query: `(max-width: 910px)` });
+  const isMobile = useMediaQuery({ query: `(max-width: 812px)` });
   const [scoreHidden, showScore] = useState(true);
   const [scoreClass, setScoreClass] = useState(styles.board);
   useEffect(() => {

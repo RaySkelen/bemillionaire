@@ -1,5 +1,4 @@
 .question {
-    font-family: Inter;
     font-weight: 600;
     font-size: 2vw;
     line-height: 116%;
@@ -10,17 +9,14 @@
     padding-right: 30%;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 812px) {
     .question {
-        font-family: Inter;
-        font-weight: 600;
-        font-size: 4vw;
-        line-height: 116%;
+        font-size: 22px;
     }
     .container {
-        margin: 5% 0 2% 2%;
+        margin: 30% 5% 25% 5%;
         display: flex;
-        padding-top: 5%;
+        padding: 5% 0 0 0;
         width: 90%;
         justify-content: center;
         text-align: center;

@@ -10,7 +10,7 @@ const SET_CURRENT_QUESTION = "SET_ANSWERS_AMOUNT";
 const SET_CURRENT_LEVEL = "SET_CURRENT_LEVEL";
 const FINISH_GAME = "FINISH_GAME";
 
-const gameStateRecuder = (state = initialState, action) => {
+const gameStateReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_GAME_STATE: {
       return { ...action.state, gameStateReady: true };
@@ -61,4 +61,4 @@ export const setLevel = (currentLevel) => ({
   currentLevel,
 });
 
-export default gameStateRecuder;
+export default gameStateReducer;

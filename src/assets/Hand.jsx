@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useMediaQuery } from "react-responsive";
+import React from "react";
 import styles from "./hand.module.css";
 
 const HandBlock = () => {
-  const [size, changeSize] = useState({ width: "100%", height: "100%" });
-  const isMobile = useMediaQuery({ query: `(max-width: 910px)` });
-  useEffect(() => {
-    changeSize({ width: "90%", height: "25vw" });
-  }, [isMobile]);
   return (
     <div className={styles.container}>
       <svg
-        width={size.width}
-        height={size.height}
+        width="100%"
+        height="100%"
         viewBox="0 0 624 367"
         fill="none"
         xmlns="http://www.w3.org/2000/svg">

@@ -5,12 +5,19 @@ html {
 body {
   height: 100%;
   overflow: hidden;
+  font-family: Inter;
 }
 
 button:hover {
-  background: #FFAC70;
+  background: #ffac70;
 }
 
 button:active {
-  background: #E87928;
+  background: #e87928;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Regular.woff") format("woff"),
+    url("./assets/fonts/Inter-Regular.ttf") format("truetype");
 }

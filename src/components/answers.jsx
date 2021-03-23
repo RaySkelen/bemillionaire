@@ -7,7 +7,7 @@ import {
   setCurrentQuestion,
   setLevel,
 } from "../redux/gameState-reducer";
-import {ReactComponent as Preloader} from "./../assets/Preloader.svg";
+import { ReactComponent as Preloader } from "./../assets/Preloader.svg";
 import styles from "./answers.module.css";
 
 const Answers = (props) => {
@@ -35,7 +35,13 @@ const Answers = (props) => {
     }
   }, [clickedId]);
   let answers = props.answers.map((a, i) => (
-    <Answer key={i} answer={a} id={i} getClickedId={handleClick} letter={props.letters[i]}/>
+    <Answer
+      key={i}
+      answer={a}
+      id={i}
+      getClickedId={handleClick}
+      letter={props.letters[i]}
+    />
   ));
   return (
     <div className={styles.container}>
@@ -62,10 +68,20 @@ const Answer = (props) => {
           fill="white"
           stroke="#D0D0D8"
         />
-        <text x="15%" y="50%" fill="#1C1C21" dominantBaseline="middle" className={styles.answerText}>
+        <text
+          x="18%"
+          y="50%"
+          fill="#1C1C21"
+          dominantBaseline="middle"
+          className={styles.answerText}>
           {props.answer}
         </text>
-        <text x="10%" y="50%" fill="#FF8B37" className={styles.letter} dominantBaseline="middle">
+        <text
+          x="10%"
+          y="50%"
+          fill="#FF8B37"
+          className={styles.letter}
+          dominantBaseline="middle">
           {props.letter}
         </text>
       </svg>
@@ -79,7 +95,7 @@ const mapStateToProps = (state) => ({
   answers: state.game.currentQuestion.content,
   level: state.game.currentLevel,
   questions: state.data.questions,
-  letters: state.config.letters
+  letters: state.config.letters,
 });
 
 export default compose(

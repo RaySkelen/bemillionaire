@@ -4,7 +4,6 @@ let initialState = [];
 
 const SET_CONFIG_STATE = "SET_CONFIG_STATE";
 const SET_QUESTIONS_AMOUNT = "SET_QUESTIONS_AMOUNT";
-const SET_ANSWERS_AMOUNT = "SET_ANSWERS_AMOUNT";
 const SET_CORRECT_ANSWERS_AMOUNT = "SET_CORRECT_ANSWERS_AMOUNT";
 
 const configReducer = (state = initialState, action) => {
@@ -14,9 +13,6 @@ const configReducer = (state = initialState, action) => {
     }
     case SET_QUESTIONS_AMOUNT: {
       return { ...state, questionsAmount: action.questionsAmount };
-    }
-    case SET_ANSWERS_AMOUNT: {
-      return { ...state, answersAmount: action.answersAmount };
     }
     case SET_CORRECT_ANSWERS_AMOUNT: {
       return { ...state, correctAnswersAmount: action.correctAnswersAmount };
@@ -36,10 +32,6 @@ const setState = (state) => ({ type: SET_CONFIG_STATE, state });
 export const setQuestionsAmount = (questionsAmount) => ({
   type: SET_QUESTIONS_AMOUNT,
   questionsAmount,
-});
-export const setAnswersAmount = (answersAmount) => ({
-  type: SET_ANSWERS_AMOUNT,
-  answersAmount,
 });
 export const setCorrectAnswersAmount = (correctAnswersAmount) => ({
   type: SET_CORRECT_ANSWERS_AMOUNT,

@@ -27,7 +27,7 @@
     display: none;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 812px) {
     .flexContainer {
         display: flex;
         height: 100%;
@@ -46,7 +46,7 @@
     .scoreContainer {
         height: 90%;
         width: 100%;
-        margin-top: 5%;
+        margin-top: 10%;
     }
     .scoreContainer div {
         margin-top: 1%;
